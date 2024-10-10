@@ -1,0 +1,359 @@
+/* estilos.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tipografía y colores */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50; /* Color de fondo del header */
+    color: #fff;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Imagen Principal */
+.hero {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Descripción */
+.descripcion {
+    padding: 40px 50px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.descripcion h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #4CAF50;
+}
+
+.descripcion p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.boton-contacta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-contacta:hover {
+    background-color: #45a049;
+}
+
+/* Nuevos Espacios: Niños y Adultos */
+.espacios {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 50px;
+    background-color: #f1f1f1;
+    gap: 30px; /* Aumentar el espacio entre tarjetas */
+    flex-wrap: wrap;
+}
+
+.espacio {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 350px; /* Aumentar el ancho de cada tarjeta */
+    text-align: center;
+    padding: 25px; /* Aumentar el padding para mayor espacio interno */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Sombra más pronunciada */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.espacio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.espacio img {
+    width: 100%;
+    height: 350px; /* Aumentar la altura para hacer la imagen más grande */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.espacio h3 {
+    margin: 20px 0 10px; /* Ajustar márgenes para espaciar mejor los elementos */
+    font-size: 24px;
+    color: #4CAF50;
+}
+
+.espacio p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Sección de Contacto */
+.contacta {
+    padding: 40px 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contacta h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #4CAF50;
+}
+
+.form-contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-grupo {
+    margin-bottom: 20px;
+}
+
+.form-grupo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-grupo input,
+.form-grupo select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-grupo-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-grupo-checkbox input {
+    margin-right: 10px;
+    width: auto;
+}
+
+.boton-enviar {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-enviar:hover {
+    background-color: #45a049;
+}
+
+.mensaje-exito {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.mensaje-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Sección de Reservas */
+.reservas {
+    padding: 40px 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.reservas h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #4CAF50;
+}
+
+.form-reservas {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-reservas .form-grupo {
+    margin-bottom: 20px;
+}
+
+.form-reservas .form-grupo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-reservas .form-grupo input,
+.form-reservas .form-grupo select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-reservas .form-grupo-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-reservas .form-grupo-checkbox input {
+    margin-right: 10px;
+    width: auto;
+}
+
+.form-reservas .boton-enviar {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-reservas .boton-enviar:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 50px;
+    position: relative;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #4CAF50;
+}
+
+footer a img, footer i {
+    width: 30px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Responsividad */
+@media (max-width: 1024px) {
+    .espacio {
+        width: 45%; /* Ajuste para pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    .espacios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .espacio {
+        width: 80%;
+    }
+
+    .form-contacto,
+    .form-reservas {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .descripcion, .espacios, .contacta, .reservas {
+        padding: 20px;
+    }
+
+    .espacio img {
+        height: 250px; /* Ajustar la altura para pantallas muy pequeñas */
+    }
+
+    .espacio {
+        width: 100%;
+    }
+}
